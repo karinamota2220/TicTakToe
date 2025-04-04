@@ -6,9 +6,31 @@
     <title>My Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Welcome to My Project</h1>
-    <button onclick="greet()">Click Me</button>
-    <script src="script.js"></script>
-</body>
+    <div id="setup">
+      <input type="text" id="player1Name" placeholder="Player 1 Name" />
+      <input type="text" id="player2Name" placeholder="Player 2 Name" />
+      <button id="startGame">Start Game</button>
+    </div>
+  
+    <div id="gameboard" class="hidden">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+  
+    <p id="message">Enter names and start the game!</p>
+    <button id="restart" class="hidden">Restart</button>
+  
+  </body>
+  <script src="script.js"></script>
+
+  
 </html>
